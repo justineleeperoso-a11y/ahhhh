@@ -1,0 +1,10 @@
+{
+  "name": "ApexRec 720p60 - Gaming Screen Recorder",
+  "description": "Lightweight Android-friendly screen recorder optimized for smooth 720p 60 FPS gameplay capture with low resource consumption, instant status HUD, and auto-save.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "display-capture"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

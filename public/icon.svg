@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a12"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle with safe zone -->
+  <rect width="512" height="512" rx="128" fill="url(#bg)"/>
+  
+  <!-- Outer glowing cyber ring -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="url(#neon)" stroke-width="14" stroke-dasharray="80 20" filter="url(#glow)"/>
+  
+  <!-- Outer camera/screen frame -->
+  <rect x="140" y="160" width="232" height="152" rx="28" fill="#1e293b" stroke="#38bdf8" stroke-width="8"/>
+  
+  <!-- Glowing Red REC dot in top right -->
+  <circle cx="340" cy="190" r="16" fill="#ef4444" filter="url(#glow)"/>
+  
+  <!-- Play/Record symbol -->
+  <polygon points="230,200 230,272 295,236" fill="#38bdf8"/>
+  
+  <!-- 720p 60fps emblem text -->
+  <text x="256" y="380" font-family="'JetBrains Mono', monospace" font-size="34" font-weight="700" fill="#38bdf8" text-anchor="middle" letter-spacing="4">720P 60FPS</text>
+</svg>
